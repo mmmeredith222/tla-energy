@@ -464,3 +464,20 @@ footer {
     text-align: center;
   }
 }
+
+.team-avatar {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background: #84E446;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.2;
+}
