@@ -394,3 +394,73 @@ footer {
     /* Basic mobile nav handling for now */
   }
 }
+
+/* Team Accordion */
+.team-accordion {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.team-accordion-item {
+  background: var(--color-bg-white);
+  border: none;
+  border-radius: 0;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1rem;
+}
+
+.team-accordion-header {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: left;
+}
+
+.team-accordion-header:hover {
+  background: #f8fafc;
+}
+
+.team-accordion-header h3 {
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  transition: transform 0.3s;
+}
+
+.team-accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.team-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.team-accordion-inner {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .team-accordion-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
