@@ -483,14 +483,27 @@ footer {
 }
 
 .team-avatar.partner-logo {
-  background: #fff;
-  border: 2px solid #84E446;
-  padding: 15px;
-  overflow: hidden;
+  background: transparent;
+  border: none;
+  padding: 0;
+  overflow: visible;
+  width: 140px;
+  height: auto;
+  border-radius: 0;
+  display: block;
+  /* Allows simple image display */
 }
 
 .team-avatar.partner-logo img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
+}
+
+/* Partner logos: NO green circle, NO background */
+.partner-logo,
+.partner-logo img {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
